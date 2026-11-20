@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danilo Grooming — Butik salon za šišanje i negu pasa</title>
+  <meta name="description" content="Danilo Grooming je butik salon za šišanje i negu pasa. Individualan pristup, prirodna kozmetika i pažljiva nega bez stresa za vašeg najboljeg prijatelja." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="site-header" id="vrh">
+    <div class="container header-inner">
+      <nav class="nav-group nav-left" aria-label="Leva navigacija">
+        <a href="#usluge" class="nav-link">USLUGE</a>
+        <span class="nav-dot" aria-hidden="true">•</span>
+        <a href="#o-nama" class="nav-link">O NAMA</a>
+      </nav>
+
+      <a href="#vrh" class="brand-logo" aria-label="Danilo Grooming početna">
+        <svg class="brand-bow" viewBox="0 0 64 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Left loop -->
+          <path d="M29 15C24 6 12 2 6 7C2 10.5 3.5 18 9 19.5C15 21 24 18 29 15Z" fill="#314D3C"/>
+          <!-- Right loop -->
+          <path d="M35 15C40 6 52 2 58 7C62 10.5 60.5 18 55 19.5C49 21 40 18 35 15Z" fill="#314D3C"/>
+          <!-- Left ribbon tail -->
+          <path d="M29 17L20 28L25 25.5L28 28.5L31 18Z" fill="#273F31"/>
+          <!-- Right ribbon tail -->
+          <path d="M35 17L44 28L39 25.5L36 28.5L33 18Z" fill="#273F31"/>
+          <!-- Center knot -->
+          <rect x="27.5" y="10.5" width="9" height="9" rx="4" fill="#3E614C" stroke="#FBF2DD" stroke-width="1.2"/>
+        </svg>
+        <span class="brand-name">DANILO GROOMING</span>
+      </a>
+
+      <nav class="nav-group nav-right" aria-label="Desna navigacija">
+        <a href="#galerija" class="nav-link">GALERIJA</a>
+        <span class="nav-dot" aria-hidden="true">•</span>
+        <a href="#kontakt" class="nav-link">KONTAKT</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Otvori meni" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#usluge" class="mobile-nav-link">Usluge</a>
+      <a href="#o-nama" class="mobile-nav-link">O nama</a>
+      <a href="#kako-funkcionise" class="mobile-nav-link">Kako funkcioniše</a>
+      <a href="#galerija" class="mobile-nav-link">Galerija</a>
+      <a href="#kontakt" class="mobile-nav-link">Kontakt i zakazivanje</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================== HERO ======================== -->
+    <section class="hero-section">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Svež izgled.<br />
+            Srećan repić.
+          </h1>
+          <p class="hero-subtitle">
+            Salon za šišanje i negu pasa gde nežnost, strpljenje i pažnja
+            stvaraju savršenu frizuru za vašeg najboljeg prijatelja.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Zakažite termin</a>
+          </div>
+        </div>
+
+        <div class="hero-mobile-dog" aria-hidden="true">
+          <img
+            src="assets/hero-banner.jpg"
+            alt="Srećan i sveže ošišan pas u salonu Danilo Grooming"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== NAŠE USLUGE ======================== -->
+    <section class="services-section" id="usluge">
+      <div class="container">
+        <h2 class="section-title">NAŠE USLUGE</h2>
+
+        <div class="services-grid">
+          <!-- Service 01 -->
+          <div class="service-card-wrap tilt-left">
+            <article class="service-card">
+              <div class="service-img-box">
+                <img src="assets/service-bath.jpg" alt="Prirodne četke i peškir za kupanje pasa" loading="lazy" />
+              </div>
+              <div class="service-body">
+                <h3 class="service-title">01. Kupanje i četkanje</h3>
+                <p class="service-desc">
+                  Temeljno kupanje blagom prirodnom kozmetikom, feniranje, raščešljavanje i higijenska nega šapa i ušiju.
+                </p>
+                <button class="btn-pill" data-service="bath">Pogledaj detalje</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-card-wrap tilt-center">
+            <article class="service-card">
+              <div class="service-img-box">
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=85" alt="Sveže ošišan i negovan pas" loading="lazy" />
+              </div>
+              <div class="service-body">
+                <h3 class="service-title">02. Kompletna nega</h3>
+                <p class="service-desc">
+                  Potpuni spa tretman i pažljivo ručno šišanje prilagođeno rasi, strukturi dlake i karakteru vašeg psa.
+                </p>
+                <button class="btn-pill" data-service="full">Pogledaj detalje</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-card-wrap tilt-right">
+            <article class="service-card">
+              <div class="service-img-box">
+                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=85" alt="Nežno prvo šišanje šteneta" loading="lazy" />
+              </div>
+              <div class="service-body">
+                <h3 class="service-title">03. Prvo šišanje šteneta</h3>
+                <p class="service-desc">
+                  Nežno i strpljivo upoznavanje sa salonom za štence do 6 meseci, uz puno igre, pohvala i bez stresa.
+                </p>
+                <button class="btn-pill" data-service="puppy">Pogledaj detalje</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== NAŠA NEŽNA FILOZOFIJA ======================== -->
+    <section class="philosophy-section" id="o-nama">
+      <div class="container philosophy-grid">
+        <div class="stamp-frame-outer">
+          <div class="stamp-frame">
+            <img
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85"
+              alt="Topao i svetao enterijer salona Danilo Grooming"
+              class="stamp-photo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="philosophy-card">
+          <h2 class="philosophy-title">Naša nežna<br />filozofija</h2>
+          <p class="philosophy-text">
+            U salonu <strong>Danilo Grooming</strong> verujemo da negovanje psa treba da bude
+            prijatno i smireno iskustvo. Radimo po principu individualnih termina — bez kaveza,
+            žurbe i buke — kako bi se svaki ljubimac osećao sigurno i voljeno.
+          </p>
+          <button class="text-link-btn" id="openStoryBtn">Naša priča</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== KAKO FUNKCIONIŠE ======================== -->
+    <section class="how-section" id="kako-funkcionise">
+      <div class="container">
+        <h2 class="section-title">KAKO FUNKCIONIŠE</h2>
+
+        <div class="steps-row">
+          <!-- Step 1 -->
+          <div class="step-item">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="11" y="15" width="42" height="38" rx="6" fill="#FBF7EE" stroke="#314D3C" stroke-width="2.4"/>
+                <path d="M11 25H53" stroke="#314D3C" stroke-width="2.4"/>
+                <path d="M21 10V19M43 10V19" stroke="#314D3C" stroke-width="2.6" stroke-linecap="round"/>
+                <!-- Paw print -->
+                <ellipse cx="32" cy="41.5" rx="6.2" ry="4.8" fill="#DFB4B8" stroke="#314D3C" stroke-width="2"/>
+                <circle cx="24" cy="34.5" r="2.6" fill="#DFB4B8" stroke="#314D3C" stroke-width="1.8"/>
+                <circle cx="29.5" cy="31.5" r="2.6" fill="#DFB4B8" stroke="#314D3C" stroke-width="1.8"/>
+                <circle cx="35.5" cy="31.5" r="2.6" fill="#DFB4B8" stroke="#314D3C" stroke-width="1.8"/>
+                <circle cx="40.5" cy="34.5" r="2.6" fill="#DFB4B8" stroke="#314D3C" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Izaberite<br />tretman</h3>
+            <p class="step-desc">
+              Odaberite negu koja najbolje odgovara rasi, tipu dlake i potrebama vašeg psa.
+            </p>
+          </div>
+
+          <!-- Dashed Curved Arrow 1 -->
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 130 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 26C28 6 58 6 76 24C92 40 108 38 122 24" stroke="#48544B" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="6 5 2 5"/>
+              <path d="M115 22L123 23.5L120.5 31.5" stroke="#48544B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-item">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="21" fill="#DFB4B8" stroke="#314D3C" stroke-width="2.4"/>
+                <circle cx="32" cy="32" r="2.5" fill="#314D3C"/>
+                <path d="M32 20V32L40 37" stroke="#314D3C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M32 14.5V16.5M32 47.5V49.5M14.5 32H16.5M47.5 32H49.5" stroke="#314D3C" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Zakažite<br />miran termin</h3>
+            <p class="step-desc">
+              Odaberite dan i vreme koji vam odgovaraju — termin je posvećen isključivo vašem ljubimcu.
+            </p>
+          </div>
+
+          <!-- Dashed Curved Arrow 2 -->
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 130 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 22C24 40 50 40 70 22C88 6 108 10 122 26" stroke="#48544B" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="6 5 2 5"/>
+              <path d="M121 18L123 26.5L114.5 26" stroke="#48544B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-item">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Floppy ears -->
+                <path d="M18 22C10 22 7 32 11 39C13.5 43 18 41 19 36" fill="#D59FA5" stroke="#314D3C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M46 22C54 22 57 32 53 39C50.5 43 46 41 45 36" fill="#D59FA5" stroke="#314D3C" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Face -->
+                <path d="M18 27C18 18 24 14 32 14C40 14 46 18 46 27V37C46 45 40 50 32 50C24 50 18 45 18 37V27Z" fill="#E8C2C6" stroke="#314D3C" stroke-width="2.3"/>
+                <!-- Eyes -->
+                <circle cx="26" cy="29" r="2.2" fill="#314D3C"/>
+                <circle cx="38" cy="29" r="2.2" fill="#314D3C"/>
+                <!-- Nose -->
+                <path d="M29 35.5C29 34 30.3 33 32 33C33.7 33 35 34 35 35.5C35 37 33.4 38.5 32 38.5C30.6 38.5 29 37 29 35.5Z" fill="#314D3C"/>
+                <!-- Smile -->
+                <path d="M32 38.5V41.5M27.5 41.5C28.8 43.2 30.8 43.2 32 41.5C33.2 43.2 35.2 43.2 36.5 41.5" stroke="#314D3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Dovedite<br />najboljeg prijatelja</h3>
+            <p class="step-desc">
+              Prepustite svog psa našim nežnim rukama i dođite po srećnog, mekog i mirisnog ljubimca.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== SREĆNI KLIJENTI ======================== -->
+    <section class="clients-section" id="galerija">
+      <div class="container">
+        <h2 class="section-title">SREĆNI KLIJENTI</h2>
+
+        <div class="gallery-wall">
+          <!-- Column 1: Medium square -->
+          <div class="gallery-col col-1">
+            <figure class="photo-frame frame-md" data-dog="Maks" data-breed="Džek Rasel terijer" data-treatment="Kupanje i četkanje">
+              <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&w=600&q=85" alt="Maks — Džek Rasel terijer" loading="lazy" />
+              <figcaption class="frame-caption">Maks • Džek Rasel</figcaption>
+            </figure>
+          </div>
+
+          <!-- Column 2: Two stacked small squares -->
+          <div class="gallery-col col-2">
+            <figure class="photo-frame frame-sm" data-dog="Bela" data-breed="Maltipu" data-treatment="Kompletna nega i medvedić frizura">
+              <img src="assets/client-2.jpg" alt="Bela — Maltipu" loading="lazy" />
+              <figcaption class="frame-caption">Bela • Maltipu</figcaption>
+            </figure>
+            <figure class="photo-frame frame-sm" data-dog="Roki" data-breed="Francuski buldog" data-treatment="Kupanje i nega dlake">
+              <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=600&q=85" alt="Roki — Francuski buldog" loading="lazy" />
+              <figcaption class="frame-caption">Roki • Buldog</figcaption>
+            </figure>
+          </div>
+
+          <!-- Column 3: Large center vertical -->
+          <div class="gallery-col col-3">
+            <figure class="photo-frame frame-lg" data-dog="Lola" data-breed="Patuljasta pudla" data-treatment="Kompletna nega i ručno šišanje">
+              <img src="https://images.unsplash.com/photo-1570670597227-6b01d32f37e8?auto=format&fit=crop&w=700&q=85" alt="Lola — Patuljasta pudla" loading="lazy" />
+              <figcaption class="frame-caption">Lola • Pudla</figcaption>
+            </figure>
+          </div>
+
+          <!-- Column 4: Tall medium -->
+          <div class="gallery-col col-4">
+            <figure class="photo-frame frame-tall" data-dog="Čarli" data-breed="Štene terijera" data-treatment="Prvo šišanje i spa kupanje">
+              <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&w=600&q=85" alt="Čarli — Štene terijera" loading="lazy" />
+              <figcaption class="frame-caption">Čarli • Terijer</figcaption>
+            </figure>
+          </div>
+
+          <!-- Column 5: Medium square slightly higher -->
+          <div class="gallery-col col-5">
+            <figure class="photo-frame frame-md" data-dog="Leo" data-breed="Zlatni retriver" data-treatment="Dubinsko iščetkavanje i kupanje">
+              <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600&q=85" alt="Leo — Zlatni retriver" loading="lazy" />
+              <figcaption class="frame-caption">Leo • Zlatni retriver</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== VAŠA PRVA POSETA & KONTAKT ======================== -->
+    <section class="first-visit-section" id="kontakt">
+      <div class="container visit-grid">
+        <!-- Left info column -->
+        <div class="visit-info">
+          <h2 class="visit-title">Vaša prva poseta?</h2>
+          <p class="visit-lead">
+            Dobro došli u Danilo Grooming! Prvi dolazak uvek počinjemo kratkim upoznavanjem
+            kako bi vaš pas istražio prostor i opustio se pre nego što krenemo sa negom.
+          </p>
+
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary>Šta treba da ponesem na prvi termin?</summary>
+              <p>
+                Dovoljno je da pas dođe prošetan i opušten. Za štence molimo da ponesete
+                potvrdu o primljenim vakcinama. Sve ostalo — od prirodnih šampona do omiljenih poslastica — čeka vas kod nas.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Koliko traje jedan tretman?</summary>
+              <p>
+                U zavisnosti od rase i stanja dlake, tretman traje između 60 i 120 minuta.
+                Nikada ne žurimo — javićemo vam porukom 15 minuta pre nego što vaš pas bude spreman.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Da li je moj pas sam u salonu tokom nege?</summary>
+              <p>
+                Da. Radimo po sistemu „jedan na jedan“, bez kaveza i gužve, što posebno prija
+                plašljivim psima, seniorima i štencima koji tek stiču poverenje.
+              </p>
+            </details>
+          </div>
+
+          <div class="salon-contact-strip">
+            <div class="contact-detail">
+              <span class="contact-label">Adresa</span>
+              <span class="contact-val">Bagljaš, Zrenjanin</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Radno vreme</span>
+              <span class="contact-val">Pon – Sub: 09:00 – 19:00</span>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-label">Telefon / Viber</span>
+              <a href="tel:+381641234567" class="contact-val contact-link">+381 64 123 4567</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right booking form card -->
+        <div class="booking-card">
+          <h3 class="booking-card-title">Zakažite termin</h3>
+          <p class="booking-card-sub">
+            Popunite kratak upit i potvrdićemo vaš termin porukom ili pozivom u najkraćem roku.
+          </p>
+
+          <form id="bookingForm" class="booking-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ownerName">Vaše ime</label>
+                <input type="text" id="ownerName" name="ownerName" placeholder="npr. Jelena Petrović" required />
+              </div>
+              <div class="form-group">
+                <label for="ownerPhone">Telefon</label>
+                <input type="tel" id="ownerPhone" name="ownerPhone" placeholder="06x / xxx-xxxx" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dogInfo">Ime i rasa psa</label>
+                <input type="text" id="dogInfo" name="dogInfo" placeholder="npr. Maza, bišon" required />
+              </div>
+              <div class="form-group">
+                <label for="serviceSelect">Usluga</label>
+                <select id="serviceSelect" name="service" required>
+                  <option value="Kupanje i četkanje">01. Kupanje i četkanje</option>
+                  <option value="Kompletna nega" selected>02. Kompletna nega</option>
+                  <option value="Prvo šišanje šteneta">03. Prvo šišanje šteneta</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Željeni datum</label>
+                <input type="date" id="preferredDate" name="preferredDate" required />
+              </div>
+              <div class="form-group">
+                <label for="preferredTime">Vreme</label>
+                <select id="preferredTime" name="preferredTime">
+                  <option value="Prepodne (09:00 – 13:00)">Prepodne (09:00 – 13:00)</option>
+                  <option value="Popodne (13:00 – 16:00)">Popodne (13:00 – 16:00)</option>
+                  <option value="Kasno popodne (16:00 – 19:00)">Kasno popodne (16:00 – 19:00)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="dogNotes">Napomena (opciono)</label>
+              <textarea id="dogNotes" name="dogNotes" rows="2" placeholder="Ako vaš pas ima posebne navike ili osetljivu kožu..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Pošalji zahtev za termin</button>
+          </form>
+
+          <div class="booking-success" id="bookingSuccess" hidden>
+            <div class="success-badge" aria-hidden="true">✓</div>
+            <h4>Zahtev je uspešno poslat!</h4>
+            <p id="bookingSuccessText"></p>
+            <button type="button" class="btn-pill" id="resetBookingBtn">Zakaži još jedan termin</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="brand-bow footer-bow" viewBox="0 0 64 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M29 15C24 6 12 2 6 7C2 10.5 3.5 18 9 19.5C15 21 24 18 29 15Z" fill="#FBF2DD"/>
+          <path d="M35 15C40 6 52 2 58 7C62 10.5 60.5 18 55 19.5C49 21 40 18 35 15Z" fill="#FBF2DD"/>
+          <path d="M29 17L20 28L25 25.5L28 28.5L31 18Z" fill="#E8DCC2"/>
+          <path d="M35 17L44 28L39 25.5L36 28.5L33 18Z" fill="#E8DCC2"/>
+          <rect x="27.5" y="10.5" width="9" height="9" rx="4" fill="#FBF2DD" stroke="#314D3C" stroke-width="1.2"/>
+        </svg>
+        <span class="footer-brand-name">DANILO GROOMING</span>
+        <p class="footer-tagline">Salon za šišanje i negu pasa.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigacija">
+        <a href="#usluge">Usluge</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#kako-funkcionise">Kako funkcioniše</a>
+        <a href="#galerija">Galerija</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="footer-meta">
+        <p>© 2026 Danilo Grooming. Sva prava zadržana.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== MODAL (SERVICE / STORY / LIGHTBOX) ======================== -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Zatvori prozor">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
