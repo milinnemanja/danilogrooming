@@ -67,10 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     mobileNav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
         mobileNav.classList.remove('is-open');
         mobileMenuBtn.classList.remove('is-open');
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
+
+        if (href && href.startsWith('#')) {
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            requestAnimationFrame(() => {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+          }
+        }
       });
     });
   }
@@ -139,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const select = document.getElementById('serviceSelect');
           if (select) select.value = svc.selectValue;
           closeModal();
-          document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('zakazivanje').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       }
     });
@@ -175,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (storyBookBtn) {
         storyBookBtn.addEventListener('click', () => {
           closeModal();
-          document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('zakazivanje').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
       }
     });

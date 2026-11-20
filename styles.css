@@ -41,6 +41,11 @@ html {
   font-size: 16px;
 }
 
+section[id],
+#zakazivanje {
+  scroll-margin-top: 96px;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--cream);
@@ -1182,6 +1187,11 @@ button {
 }
 
 @media (max-width: 768px) {
+  section[id],
+  #zakazivanje {
+    scroll-margin-top: 84px;
+  }
+
   .header-inner {
     grid-template-columns: 1fr auto;
     min-height: 70px;
