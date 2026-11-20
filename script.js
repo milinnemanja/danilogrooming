@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       duration: '90 – 120 min',
       price: 'od 4.200 RSD',
       intro:
-        'Naš najtraženiji paket — kompletan spa tretman i ručno oblikovanje frizure u skladu sa rasom i vašim željama.',
+        'Naš najtraženiji paket kompletan spa tretman i ručno oblikovanje frizure u skladu sa rasom i vašim željama.',
       includes: [
         'Sve korake iz paketa „Kupanje i četkanje“',
         'Potpuno šišanje makazama i/ili mašinicom (standard rase ili medvedić stil)',
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3 class="modal-title" id="modalTitle">Strpljenje na prvom mestu</h3>
         <p class="modal-text">
           Danilo Grooming je nastao iz iskrene ljubavi prema psima i želje da šišanje više nikada
-          ne bude stresan događaj — ni za psa, ni za vlasnika.
+          ne bude stresan događaj ni za psa, ni za vlasnika.
         </p>
         <p class="modal-text">
           Umesto užurbane atmosfere i redova, naš prostor je osmišljen kao topao, miran kutak
