@@ -751,6 +751,10 @@ button {
   line-height: 1.65;
 }
 
+.visit-mobile-cta {
+  display: none;
+}
+
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -1298,6 +1302,11 @@ button {
 
   .salon-contact-strip {
     grid-template-columns: 1fr;
+  }
+
+  .visit-mobile-cta {
+    display: block;
+    margin: -10px 0 24px;
   }
 
   .form-row {
